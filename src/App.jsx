@@ -33,12 +33,20 @@ export default function App() {
       demo: "https://bestbudwtwr.ignorelist.com",
     },
     {
-      title: "Project 2",
+      title: "News Explorer",
       description:
-        "Full-stack application showcasing modern web development practices",
-      tech: ["TypeScript", "Express", "MongoDB"],
-      github: "#",
-      demo: "#",
+        "React application that allows users to search for news articles using the News API and save them to their personal account",
+      tech: ["React", "React Router", "Vite", "News API"],
+      github: "https://github.com/BarryRogerG/news-explorer-frontend",
+      demo: "http://34.134.30.14",
+    },
+    {
+      title: "Around The US",
+      description:
+        "Responsive user-friendly website enabling users to add/delete images and change their profile info",
+      tech: ["HTML5", "CSS3", "JavaScript", "Webpack"],
+      github: "https://github.com/BarryRogerG/se_project_aroundtheus",
+      demo: "http://34.134.30.14/aroundtheus/",
     },
   ];
 
@@ -127,7 +135,7 @@ export default function App() {
               : "translate-y-20 opacity-0"
           }`}
         >
-          <h1 className="text-6xl md:text-7xl font-bold mb-4 gold-animated leading-tight pb-2 overflow-visible">
+          <h1 className="text-6xl md:text-7xl font-bold mb-4 gold-animated leading-[1.15] pt-2 pb-4 overflow-visible">
             Barry Roger Goldberg
           </h1>
 
@@ -149,13 +157,13 @@ export default function App() {
         </header>
 
         <section
-          className={`mb-24 transition-all duration-1000 transform text-center ${
+          className={`mb-24 transition-all duration-1000 transform text-center overflow-visible ${
             showProjects
               ? "translate-y-0 opacity-100"
               : "translate-y-20 opacity-0"
           }`}
         >
-          <h2 className="text-4xl font-bold mb-12 gold-animated inline-block">
+          <h2 className="text-4xl font-bold mb-12 gold-animated inline-block pt-2 pb-3">
             Featured Projects
           </h2>
 
@@ -163,7 +171,9 @@ export default function App() {
             {projects.map((project, idx) => (
               <div
                 key={idx}
-                className="group relative bg-black/40 backdrop-blur-lg rounded-2xl p-8 border border-yellow-500/40 hover:border-yellow-500/70 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-500/30"
+                className={`group relative bg-black/40 backdrop-blur-lg rounded-2xl p-8 border border-yellow-500/40 hover:border-yellow-500/70 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-500/30 ${
+                  idx === 2 ? "md:col-span-2 md:max-w-2xl md:mx-auto" : ""
+                }`}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/0 to-yellow-600/0 group-hover:from-yellow-500/10 group-hover:to-yellow-600/10 rounded-2xl transition-all duration-300" />
 
@@ -226,12 +236,12 @@ export default function App() {
               Connect With Me
             </h2>
 
-            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-gray-300 mb-8 max-w-2xl mx-auto pb-2">
               Interested in collaborating or have a project in mind? Let's
               connect and create something amazing together.
             </p>
 
-            <div className="flex justify-center gap-6">
+            <div className="flex flex-col md:flex-row justify-center gap-6">
               <a
                 href="mailto:bgold656@gmail.com"
                 className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300 hover:scale-105 border border-yellow-500"
