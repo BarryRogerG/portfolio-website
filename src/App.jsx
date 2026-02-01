@@ -41,6 +41,14 @@ export default function App() {
       demo: "http://34.134.30.14",
     },
     {
+      title: "SmartOps",
+      description:
+        "A comprehensive team-governance platform featuring Role-Based Access Control (RBAC) to oversee operational health, delegate task ownership, and resolve bottlenecks via a centralized Admin command center.",
+      tech: ["React", "Node.js", "PostgreSQL", "RBAC", "Tailwind"],
+      github: "[Insert your GitHub Link here]",
+      demo: "https://smartops-frontend.onrender.com",
+    },
+    {
       title: "Around The US",
       description:
         "Responsive user-friendly website enabling users to add/delete images and change their profile info",
@@ -171,9 +179,7 @@ export default function App() {
             {projects.map((project, idx) => (
               <div
                 key={idx}
-                className={`group relative bg-black/40 backdrop-blur-lg rounded-2xl p-8 border border-yellow-500/40 hover:border-yellow-500/70 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-500/30 ${
-                  idx === 2 ? "md:col-span-2 md:max-w-2xl md:mx-auto" : ""
-                }`}
+                className="group relative bg-black/40 backdrop-blur-lg rounded-2xl p-8 border border-yellow-500/40 hover:border-yellow-500/70 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-500/30"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/0 to-yellow-600/0 group-hover:from-yellow-500/10 group-hover:to-yellow-600/10 rounded-2xl transition-all duration-300" />
 
