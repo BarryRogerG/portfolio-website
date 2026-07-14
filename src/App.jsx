@@ -30,7 +30,7 @@ export default function App() {
         "Weather-based clothing recommendation app with real-time API integration",
       tech: ["React", "Node.js", "Weather API"],
       github: "https://github.com/BarryRogerG/se_project_react",
-      demo: "https://bestbudwtwr.ignorelist.com",
+      demo: "https://se-project-react-zeta.vercel.app/",
     },
     {
       title: "News Explorer",
