@@ -54,7 +54,7 @@ export default function App() {
         "Responsive user-friendly website enabling users to add/delete images and change their profile info",
       tech: ["HTML5", "CSS3", "JavaScript", "Webpack"],
       github: "https://github.com/BarryRogerG/se_project_aroundtheus",
-      demo: "http://34.134.30.14/aroundtheus/",
+      demo: "https://se-project-aroundtheus-ebon.vercel.app",
     },
   ];
 
