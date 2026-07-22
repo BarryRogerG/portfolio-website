@@ -54,7 +54,7 @@ export default function App() {
         "Full-stack job application tracker with status-history analytics, drag-and-drop pipeline views, and live company verification via the Brandfetch API.",
       tech: ["React", "Node.js", "PostgreSQL", "Prisma", "Tailwind"],
       github: "https://github.com/BarryRogerG/smart-job-tracker",
-      demo: "https://smart-job-tracker-9xvx.vercel.app/",
+      demo: "https://smart-job-tracker-9xvx.vercel.app/login",
     },
     {
       title: "Around The US",
